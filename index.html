@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/formulaire.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Momo+Trust+Display&family=Orbitron:wght@400..900&family=Roboto+Slab:wght@100..900&family=Stack+Sans+Notch:wght@200..700&display=swap"
+    rel="stylesheet">
+  <title>Jaider Contreras-TP2</title>
+</head>
+
+<body>
+  <div class="hero" id="accueil">
+    <div class="hero__barresup">
+      <img src="images/batons.webp" class="hero__logo" alt="logo" width="64" height="64">
+      <div class="navigation">
+        <label class="navigation__bouton" for="check-burger">
+          <img src="https://s2.svgbox.net/hero-solid.svg?ic=menu&color=000" class="burger__image" width="32"
+            height="32">
+        </label>
+        <input type="checkbox" id="check-burger">
+        <nav class="navigation__menu">
+          <a href="#accueil">Accueil</a>
+          <a href="#inscription">Inscription</a>
+          <a href="#pointages">Pointages</a> <!--Tableau ici-->
+          <a href="#videos">Vidéos</a>
+          <a href="#images">Images</a>
+          <a href="#liens">Autres liens</a>
+        </nav>
+      </div>
+
+    </div>
+    <header class="accueil centre">
+
+      <h1 class="hero__titre">TP2 - HockeyStiques</h1>
+      <div class="accueil__div">
+        <p class="info__accueil">Dernières nouvelles du hockey : résultats des matchs, performances des joueurs,
+          classements et moments forts de la LNH. Suivez en temps réel les faits saillants,
+           les statistiques clés et les rumeurs du monde du hockey pour rester toujours à jour sur votre sport préféré.</p>
+        <h2 class="accueil__items">Jaider Contreras 582-1W1 - Mise en page web</h2>
+        <h2 class="accueil__items">Techniques d'integration multimédia</h2>
+        <h2 class="accueil__items">Collège de Maisonneuve</h2>
+        <h2 class="accueil__items">Adresse de la Github-page !!!!</h2>
+        <h2 class="accueil__items">Automne 2025</h2>
+        
+        <h2 class="accueil">
+          <a class="accueil__bouton" href="#inscription">Inscription</a>
+        </h2>
+        <h2 class="accueil">Zone de recherche</h2>
+      </div>
+
+    </header>
+  </div>
+
+  <!-- ********************************************************** FORMULAIRE D'INSCRIPTION ********************** -->
+
+  <div class="div__inscription">
+    <section class="inscription centre" id="inscription">
+      <h1 class="inscription__titre">Inscription</h1>
+      <form class="formulaire">
+        <div class="formulaire__div">
+          <fieldset>
+            <label class="formulaire__label" for="txt-nom">Nom </label>
+            <input class="formulaire__text" id="txt-nom" type="text" placeholder="Entrez votre nom">
+          </fieldset>
+          <fieldset>
+            <label class="formulaire__label" for="txt-prenom">Prenom</label>
+            <input class="formulaire__text" id="txt-prenom" type="text" placeholder="Entrez votre prenom">
+          </fieldset>
+          <fieldset>
+            <label class="formulaire__label" for="txt-courriel">Courriel</label>
+            <input class="formulaire__text" id="txt-courriel" type="email" placeholder="Entrez votre courriel">
+          </fieldset>
+        </div>
+        <fieldset>
+          <legend>Abonnement</legend>
+          <label>Pro <input type="radio" name="rad-abonnement"></label>
+          <label>Intermédiare <input type="radio" name="rad-abonnement"></label>
+          <label>Débutant <input type="radio" name="rad-abonnement"></label>
+          <input class="bouton__valider" type="submit" value="Valider">
+        </fieldset>
+        <h1 class="inscription__titre">Infolettre</h1>
+
+
+
+      </form>
+    </section>
+  </div>
+
+  <!-- *********************************************************** TABLEAU ************************************** -->
+
+
+  <div class="div__pointages">
+    <section class="pointages centre" id="pointages">
+      <h1 class="pointages__titre">Pointages (premières 12 équipes)</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Position</th>
+            <th>Équipe</th>
+            <th>Pointage</th>
+            <th>Parties Jouées</th>
+            <th>Victoires</th>
+            <th>Defeats</th>
+            <th>Defeats en Temps Extra</th>
+            <th>Pourcentage</th>
+            <th>Buts</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Avalanches</td>
+            <td>37</td>
+            <td>22</td>
+            <td>16</td>
+            <td>1</td>
+            <td>5</td>
+            <td>.841</td>
+            <td>88</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Stars</td>
+            <td>32</td>
+            <td>23</td>
+            <td>14</td>
+            <td>5</td>
+            <td>4</td>
+            <td>.696</td>
+            <td>80</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Hurricanes</td>
+            <td>30</td>
+            <td>22</td>
+            <td>14</td>
+            <td>6</td>
+            <td>2</td>
+            <td>.682</td>
+            <td>78</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Ducks</td>
+            <td>29</td>
+            <td>22</td>
+            <td>14</td>
+            <td>7</td>
+            <td>1</td>
+            <td>.659</td>
+            <td>80</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Devils</td>
+            <td>29</td>
+            <td>22</td>
+            <td>14</td>
+            <td>7</td>
+            <td>1</td>
+            <td>.659</td>
+            <td>69</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Lightings</td>
+            <td>28</td>
+            <td>22</td>
+            <td>13</td>
+            <td>7</td>
+            <td>2</td>
+            <td>.636</td>
+            <td>69</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Krakens</td>
+            <td>28</td>
+            <td>22</td>
+            <td>11</td>
+            <td>5</td>
+            <td>6</td>
+            <td>.636</td>
+            <td>57</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Islanders</td>
+            <td>28</td>
+            <td>23</td>
+            <td>13</td>
+            <td>8</td>
+            <td>2</td>
+            <td>.609</td>
+            <td>71</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>Wilds</td>
+            <td>28</td>
+            <td>23</td>
+            <td>12</td>
+            <td>7</td>
+            <td>4</td>
+            <td>.609</td>
+            <td>68</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>Kings</td>
+            <td>28</td>
+            <td>23</td>
+            <td>11</td>
+            <td>6</td>
+            <td>6</td>
+            <td>.609</td>
+            <td>62</td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>Knights</td>
+            <td>27</td>
+            <td>22</td>
+            <td>10</td>
+            <td>5</td>
+            <td>7</td>
+            <td>.614</td>
+            <td>69</td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>Mamooths</td>
+            <td>27</td>
+            <td>23</td>
+            <td>12</td>
+            <td>8</td>
+            <td>3</td>
+            <td>.587</td>
+            <td>71</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+
+  <!-- ********************************************************** VIDEOS ***************************************** -->
+  <div>
+    <section class="videos centre" id="videos">
+      <h1>Vidéos</h1>
+    </section>
+  </div>
+
+  <!-- *********************************************************** IMAGES ***************************************  -->
+  <div>
+    <section class="images centre" id="images">
+      <h1>Images</h1>
+    </section>
+  </div>
+
+  <!-- *********************************************************** PIED D'IMAGE **********************************  -->
+  <div class="div__piedpage">
+    <footer class="liens centre" id="liens">
+      <section class="pied__section">
+        <h3>Liens utiles</h3>
+        <ul>
+          <li><a href="https://www.nhl.com/" target="blank">Site de la LNH</a></li>
+          <li><a href="https://www.espn.com/nhl/" target="blank">Nouvelles sur le hockey</a></li>
+          <li><a href="https://www.youtube.com/nhl" target="_blank">Chaîne de Youtube</a></li>
+          <li><a href="https://shop.nhl.com/" target="blank">Magasin de la LNH</a></li>
+          <li><a href="https://www.hhof.com/" target="blank">Histoire du hockey</a></li>
+        </ul>
+      </section>
+      <section class="pied__section">
+        <h3>Adresse Collège de Maisonneuve</h3>
+        <ul>
+          <li>3800 R. SHerbrooke E, Montréal, QC H1X 2A2</li>
+          <li>Téléphone: 514-254-7131</li>
+          <li>Nombres d'étudiants 7000</li>
+          <li>Nombre de programme offerts: 17</li>
+        </ul>
+      </section>
+
+      <section class="pied__section">
+        <h3>Sur la page</h3>
+        <p>Cette page a été créée avec le fin d'informer sur toutes les nouvelles
+          sur le hockey sur glace et la LNH (League Nationale de Hockey).
+        </p>
+
+      </section>
+      <section class="pied__section">
+        <h2 class="pied__page">
+          <a class="pied__bouton" href="#accueil">Accueil</a>
+        </h2>
+
+
+      </section>
+      <section class="pied__section">
+        <h3>COORDONNÉES</h3>
+        <ul>
+          <li>Auteur: Jaider Contreras</li>
+          <li>Téléphone: 438-123-4567</li>
+          <li>Collège de Maisonneuve</li>
+          <li>Session: Automne 2025</li>
+        </ul>
+      </section>
+      <div class="pied__logos">
+        <figure class="pied__logos">
+          <img src="https://s2.svgbox.net/octicons.svg?ic=mark-github-bold&color=000" width="20" height="20"
+            alt="github">
+          <img src="https://s2.svgbox.net/materialui.svg?ic=facebook&color=000" width="32" height="32">
+          <img src="https://s2.svgbox.net/materialui.svg?ic=sports_hockey&color=000" width="32" height="32">
+          <img src="https://s2.svgbox.net/social.svg?ic=linkedin&color=000" width="32" height="32">
+          <img src="https://s2.svgbox.net/social.svg?ic=instagram&color=000" width="32" height="32">
+          <img src="https://s2.svgbox.net/social.svg?ic=discord&color=000" width="32" height="32">
+        </figure>
+      </div>
+
+    </footer>
+  </div>
+</body>

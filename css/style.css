@@ -1,0 +1,296 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+section,
+header,
+footer {
+    min-height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    font-family: "Momo Trust Display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.centre {
+    max-width: 1100px;
+    background-color: #ffffff4c;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+/* **********************************************la division .hero    */
+
+.hero {
+    background-image: url("../images/caufield.jpg");
+    background-position: 50%;
+    background-repeat: no-repeat;
+
+}
+
+.hero__barresup {
+    background-color: #f6f9ffcc;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.hero>.centre {
+    background-color: #f6f9ffcc;
+}
+
+.hero__logo {}
+
+body>div:nth-of-type(2) {
+    background: linear-gradient(to bottom, transparent 80%, black 100%),
+        url(../images/mc-david.jpg)
+}
+
+body>div:nth-of-type(3) {
+    background: linear-gradient(to bottom, transparent 80%, black 100%),
+        url(../images/stade.jpg);
+ }
+
+body>div:nth-of-type(4) {
+    background: linear-gradient(to top, transparent 80%, black 100%),
+        url(../images/cup.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+body>div:nth-of-type(5) {
+    background-color: rgb(0, 255, 89);
+}
+
+body>div:nth-of-type(6) {
+    background-color: rgb(0, 204, 255);
+}
+
+body>div:nth-of-type(7) {
+    background-color: rgb(187, 0, 255);
+}
+
+body>div:nth-of-type(8) {
+    background-color: rgb(255, 0, 13);
+}
+
+/* ************************************************************** Accueil - Hero Page ************************* */
+.accueil__div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px;
+    
+}
+
+.info__accueil{
+    background-color: #00048634;
+    padding: 4px;
+    font-size: 22px;
+    border-radius: 2px;
+    font-family: "Share Tech Mono", monospace;
+}
+
+.accueil__items{
+    font-size: 14px;
+    border-radius: 4px;
+    padding: 5px;
+    background-color: #0004862e;
+    flex-basis: 485px;
+    flex-shrink: 0;
+    flex-flow: 1;
+}
+
+.hero{
+     background: linear-gradient(to top, transparent 80%, rgb(255, 255, 255) 100%),
+     url("../images/caufield.jpg");
+     background-position: 50%;
+}
+
+.accueil {
+    color: rgb(0, 0, 0);
+   
+}
+
+.accueil__bouton {
+    font-size: 32px;
+    text-decoration: none;
+    background-color: rgb(226, 78, 78);
+    box-shadow: 3px 3px 3px red;
+    padding: 5px;
+    border-radius: 4px;
+    border: 2px solid #ba0000;
+}
+
+.hero__titre {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    text-shadow: #000486 9px 0 6px;
+    font-size: 3rem;
+    font-family: "Momo Trust Display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 5px;
+}
+
+/* ************************************************* INSCRIPTION ******************************** */
+.div__inscription {
+}
+
+.inscription{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inscription__titre {
+    margin: 10px;
+    color: azure;
+    text-shadow: #2600ff 1px 0 10px;
+}
+
+/* ************************************************* TABLEAU ************************************ */
+.pointages__titre {
+    color: white;
+    text-shadow:
+        1px 1px 2px red,
+        0 0 1em blue,
+        0 0 0.2em blue;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.div__pointages {
+}
+
+table {
+    font-family: "Iceland", sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    border: 3px solid black;
+}
+
+tr {}
+
+td,
+th {
+    border: 1px solid black;
+    font-size: 1.5rem;
+    padding: 5px;
+    text-align: center;
+    background-color: #ffffffd6;
+    font-family: "Iceland", sans-serif;
+}
+
+th {
+    font-style: italic;
+    font-weight: bold;
+}
+
+caption {
+    font-size: 3rem;
+    pad: 7px;
+    border: 1px dotted rgb(255, 255, 255);
+}
+
+tbody tr:nth-of-type(odd) {
+    background-color: rgb(255, 255, 255);
+}
+
+
+/* ********************************* PIED DE PAGE **************************** */
+footer{
+    background-color: #ffffff;
+    min-height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.div__piedpage{
+    background-image: url("../images/equipe.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.div__piedpage>.centre{
+    background-color: #ffffffb1;
+}
+ 
+a {
+    text-decoration: none;
+    color: rgb(36, 0, 134)
+}
+ 
+ul {
+    list-style: none;
+}
+ 
+.pied__section {
+    padding: 24px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 220px;
+    font-size: 16px; 
+    min-height: auto;
+}
+
+.pied__bouton{
+    font-size: 24px;
+    text-decoration: none;
+    background-color: rgb(226, 78, 78);
+    box-shadow: 3px 3px 3px red;
+    padding: 5px;
+    border-radius: 4px;
+    border: 2px solid #ba0000;
+}
+ 
+.pied__section ul {
+    list-style-type: none;
+    padding: 11px 0;
+    font-size: 1rem;
+ 
+}
+ 
+.pied__section li {
+    list-style-type: none;
+    padding: 7px 0;
+    font-size: 1rem;
+ 
+}
+ 
+.pied__cite {
+    display: block;
+    font-size: 1rem;
+    padding-top: 20px;
+}
+ 
+.pied__logos {
+    display: flex;
+    margin: 10px;
+    gap: 47px;
+    flex-basis: 40%;
+    padding-right: 67px;
+}
+ 
+.pied__img {
+    display: block;
+    width: 100%;
+}
+ 
+.pied__figure {
+    margin: 0;
+}
+ 

@@ -1,0 +1,44 @@
+#check-burger{
+    display: none;
+}
+
+.navigation{
+    position:fixed;
+    top: 20px;
+    right: 20px;
+    text-align: right;
+}
+.navigation__bouton{
+    background-color: rgb(255, 164, 201);
+    display: inline-block;
+    border-radius: 4px;
+}
+
+.navigation__menu{
+    transform: translateX(125%);
+    transition: transform 1s linear;
+    background-color: rgba(0, 0, 0, 0.856);
+    padding: 10px;
+}
+
+.navigation__menu a{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: block;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.296);
+    padding: 4px;
+    margin: 5px;
+    color: rgb(255, 193, 193);
+    font-size: 2rem;
+}
+
+.navigation__menu a:hover{
+    background-color: rgb(68, 36, 148);
+    color: aliceblue;
+}
+
+ 
+#check-burger:checked ~ .navigation__menu{
+    transform: translateX(0);
+}
+
