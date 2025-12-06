@@ -65,8 +65,7 @@ body>div:nth-of-type(3) {
 
 body>div:nth-of-type(4) {
     background: linear-gradient(to top, transparent 80%, black 100%),
-        url(../images/cup.jpg);
-    background-position: 50%;
+        url(../images/article1.jpg);
     background-repeat: no-repeat;
 }
 
@@ -84,7 +83,7 @@ body>div:nth-of-type(7) {
 
 body>div:nth-of-type(8) {
     background-color: rgb(255, 0, 13);
-}
+} 
 
 /* ************************************************************** Accueil - Hero Page ************************* */
 .accueil__div {
@@ -211,6 +210,11 @@ tbody tr:nth-of-type(odd) {
     background-color: rgb(255, 255, 255);
 }
 
+/* ********************************* ARTICLES ******************************** */
+
+.centre{
+    background-color: #ffffff98;
+}
 
 /* ********************************* PIED DE PAGE **************************** */
 footer{
