@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+article{}
+
+h1{}
+
+p{}
+
+.horizontal{}
+
+.horizontal__div{}
+
+.horizontal__section{
+    display: inline-block;
+    border: 2px solid #aaa;
+    margin-left: 200px;
+}
+
+.horizontal__section a{
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    border: 1px solid purple;
+    background-color: aqua;
+    margin: 5px 0 ;
+    padding: 3px 5px;
+    font-weight: bold;
+}
+
+.horizontal__section a:link{
+    color: green;
+}
+
+.horizontal__section a:visited{
+    color: coral;
+}
+
+.horizontal__section a:hover{
+    background-color: blue;
+}
+
+.horizontal__section a:active{
+    color: red;
+    background-color: #0f0;
+} 

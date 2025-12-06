@@ -1,0 +1,34 @@
+.recherche {
+            border : 1px solid #cccccc00;
+            display : inline-block;
+            background-color: #00000021;
+            border-bottom: solid;
+            margin: 6px;
+            border-radius: 4px;
+        }
+
+        .recherche__input {
+            background-color: transparent;
+            border : none;
+            display: inline-block;
+            vertical-align: top;
+            padding:8px;
+            color :#000000;
+            border-bottom: black 1px;
+            width: 360px;
+
+        }
+        .recherche__input:focus {
+            outline : none;
+
+        }
+
+        .recherche__input::placeholder{
+            color : #000000;
+        }
+        
+        .recherche__img {
+            display: inline-block;
+            vertical-align: top;
+            margin:3px;
+        }

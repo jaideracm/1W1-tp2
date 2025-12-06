@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+}
+ 
+html{
+    font-size: 16px;
+}
+ 
+body {
+    margin: 0;
+    padding: 0;
+}
+ 
+.entete {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px 15px;
+    gap: 20px;
+}
+ 
+.centre {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+   /* border: 1px solid gray;*/
+    background-color: rgba(255, 255, 255, 0.24);
+    padding: 20px;
+}
+ 
+.haut,.bas {
+    background-color: rgb(237, 248, 216);
+    box-shadow: 0 10px 10px;
+}
+ 
+.millieu {
+    background-color: rgb(194, 246, 255);
+}
+ 
+/*****************ENTETE*************/
+.entete__logo {
+    display: inline-block;
+}
+ 
+.entete__titre h1 {
+    display: inline-block;
+    font-size: 4rem;
+    color: rgb(5, 54, 52);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 1px 0px 10px #3ea7be;
+ 
+}
+ 
+.entete__sociaux {
+    display: flex;
+    margin: 10px;
+    gap: 47px;
+    width: 100%;
+ 
+}
+.entete__navform {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    gap: 20px;
+ 
+}
+ 
+.entete__nav a {
+    display: inline-block;
+    color: rgba(0, 0, 0, 0.63);
+    background-color: #3ea7be;
+    text-decoration: none;
+    padding: 3px 5px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+   
+ 
+}
+/*****************PRINCIPALE*************/
+.principal__centre {
+    border: 3px solid #fff;
+    padding: 20px;
+}
+ 
+.principal__article {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 235px;
+}
+ 
+.principal__figure {
+    display: block;
+ 
+}
+
+.principal__figure img {
+    width: 100%;
+    height: 100%;
+ 
+}
+
+figure img {
+ display: block;
+}
+ 
+.millieu h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:rgb(5, 54, 52);
+}
+ 
+.fig__caption {
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    font-style: italic;
+    font-weight: bold;
+    color: black;
+    background-color: rgb(93, 172, 236);
+    padding: 4px;
+   
+ 
+ 
+}
+/*****************FOOTER*************/
+.pied__centre{
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgba(255, 255, 255, 0.225);
+    margin: 0 auto;
+    color: black;
+    gap: 30px;
+    padding: 20px ;
+    display: flex;
+    flex-wrap: wrap;
+}
+ 
+.pied__section {
+    flex-grow:0 ;
+    flex-shrink:1 ;
+    flex-basis:300px ;
+}
+ 
+ul {
+    list-style: none;
+}
+ 
+.pied__sociaux {
+    display: flex;
+    margin: 10px;
+    gap: 47px;
+    flex-basis: 40%;
+    padding-right: 67px;
+}

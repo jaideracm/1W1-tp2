@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire Inscription</title>
+    <link rel="stylesheet" href="css/formulaire.css">
+</head>
+<body>
+    <form class="formulaire">
+        <div class="formulaire__div">
+        <fieldset>
+        <label class="formulaire__label" for="txt-nom">Nom</label>
+        <input class="formulaire__text" id="txt-nom" type="text" placeholder="Entrez votre nom">
+        </fieldset>
+        <fieldset>
+        <label class="formulaire__label" for="txt-prenom">Prenom</label>
+        <input class="formulaire__text" id="txt-prenom" type="text" placeholder="Entrez votre prenom">
+        </fieldset>
+        <fieldset>
+        <label class="formulaire__label" for="txt-courriel">Courriel</label>
+        <input class="formulaire__text" id="txt-courriel" type="email" placeholder="Entrez votre courriel">
+        </fieldset>
+    </div>
+        <fieldset>
+            <legend>Abonnement</legend>
+            <label>Pro <input type="radio" name="rad-abonnement"></label>
+            <label>Intermédiare <input type="radio" name="rad-abonnement"></label>
+            <label>Débutant <input type="radio" name="rad-abonnement"></label>
+        </fieldset>
+
+        <input type="submit" value="Valider">
+    </form>
+</body>
+</html>

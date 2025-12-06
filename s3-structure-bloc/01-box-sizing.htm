@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centre horizontal</title>
+</head>
+<style>
+    section{
+        width: 900px;
+        border: 10px solid rgb(90, 223, 90);
+        padding: 40px;
+    }
+    .content{
+        box-sizing: content-box;
+        /* largeur globale = 900px + 10px+10px+40px+40px = 1000px*/
+    }
+
+    .border{
+        box-sizing: border-box;
+        /* largeur globale = 900px */
+
+    }
+</style>
+<body>
+    <section class="content">content-box</section>
+    <section class="border">border-box</section>
+</body>
+</html>

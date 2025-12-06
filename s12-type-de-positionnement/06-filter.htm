@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propiété Filter</title>
+    <style>
+        .mon-filtre{
+            filter: blur(0)
+            brightness(1.14)
+            contrast(1.18)
+            hue-rotate(-198deg)
+            invert(0.03)
+            saturate(1.94)
+            sepia(0.13);
+        }
+        img{
+            width: 500px;
+            
+        }
+        .mon-filtre:hover{
+            filter: none;
+        }
+    </style>
+</head>
+<body>
+    <img class="mon-filtre" src="images/caufield.jpg" alt="">
+</body>
+</html>

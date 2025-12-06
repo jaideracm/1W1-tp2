@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positionnement Static</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        html{
+            font: 14px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            height: 200px;
+            border: 2px dotted #aaa;
+            background: linear-gradient(67deg, red, blue, white);
+            color: rgb(255, 255, 255);
+            font-size: 3rem;
+        }
+        .mon-static{
+            position: static;
+        }
+        .mon-relative{
+            position: relative;
+            top: 100px;
+            left: 100px;
+            z-index: -1; /* permet de controler la profondeur relative d'un élément */
+        }
+        .mon-absolute{
+            position: absolute;
+            top: 100px;
+            left: 200px;
+            z-index: 1; /* permet de controler la profondeur relative d'un élément */
+            background: linear-gradient(50deg, rgb(202, 67, 166), orange);
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        (div.mon-static{$})*8
+    -->
+    <div class="mon-static">1</div>
+    <div class="mon-static">2</div>
+    
+    <div class="mon-absolute">4 absolute</div>
+    <div class="mon-relative">5 relative</div>
+    <div class="mon-static">6</div>
+    <div class="mon-relative">7
+        <div class="mon-absolute">3 absolute</div>
+    </div>
+    <div class="mon-static">8</div>
+</body>
+</html>

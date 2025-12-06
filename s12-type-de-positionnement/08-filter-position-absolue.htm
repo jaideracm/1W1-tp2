@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propiété Filter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Momo+Trust+Display&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Roboto+Slab:wght@100..900&family=Science+Gothic:wght@100..900&family=Stack+Sans+Notch:wght@200..700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+            
+        }
+        html{
+            font-size: 14px;
+            font-family: "Montserrat", sans-serif;
+        }
+        img{
+            height: 100vh;
+            position: absolute;
+            z-index: -1;
+            object-fit: cover;
+        }
+        p{
+            font-size: 1rem;
+        }
+        .hero{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 100vh;
+        }
+        .hero__centre{
+            margin: 0 auto 0 0;
+            max-width: 900px;
+            padding: 30px;
+            background: linear-gradient(rgb(162, 35, 35), rgba(33, 33, 148, 0));
+            
+            /* background-color: rgba(245, 245, 220, 0.866); */
+            
+        }
+        .mon-filtre{
+            transition: filter 0.5s;
+            background: linear-gradient(rgb(162, 35, 35), rgba(33, 33, 148, 0));
+            /* filter: hue-rotate(123deg); */
+            /* background: linear-gradient(90deg, rgb(128, 17, 115)); */
+
+        }
+        
+        .mon-filtre:hover{
+            filter: none;
+        }
+        .hero__titre{
+            font-family: "Momo Trust Display", sans-serif;
+            font-weight: bold;
+            font-size: 4rem;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        
+    <img class="mon-filtre" src="images/caufield.jpg" alt="">
+    <div class="hero__centre">
+    <h1 class="hero__titre">HockeyStiques</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor deserunt totam sapiente odio porro odit, cum eum explicabo perspiciatis ab voluptatum dicta commodi cumque quidem recusandae! Natus quos rem cum?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor deserunt totam sapiente odio porro odit, cum eum explicabo perspiciatis ab voluptatum dicta commodi cumque quidem recusandae! Natus quos rem cum?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor deserunt totam sapiente odio porro odit, cum eum explicabo perspiciatis ab voluptatum dicta commodi cumque quidem recusandae! Natus quos rem cum?</p>
+    </div>
+</section>
+</body>
+</html>

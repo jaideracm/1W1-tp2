@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    height: 100vh;
+}
+
+.un{
+    background-color: aquamarine;
+}
+.deux{
+    background-color: rgb(255, 249, 127);
+}
+.trois{
+    background-color: rgb(127, 255, 140);
+}
+.quatre{
+    background-color: rgb(255, 127, 165);
+}
+.cinq{
+    background-color: rgb(127, 191, 255);
+}
+
+.menu{
+    position: fixed;
+    width: 350px;
+    top: 0;
+    right: 0;
+}
+

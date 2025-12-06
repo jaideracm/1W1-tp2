@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(87, 13, 156);
+}
+
+.centre{
+    max-width: 1300px;
+    margin: 30px auto;
+    background-color: rgba(177, 121, 230, 0.762);
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid black;
+}
+
+tr{}
+
+td, th{
+    border: 1px solid black;
+    font-size: 1.5rem;
+    padding: 5px;
+    text-align: left;
+}
+
+th{
+    font-style: italic;
+    font-weight: bold;
+}
+
+caption{
+    font-size: 3rem;
+    pad: 7px;
+    border: 1px dotted rgb(255, 255, 255);
+}
+
+tbody tr:nth-of-type(odd){
+    background-color: rgba(0, 0, 0, 0.262);
+}

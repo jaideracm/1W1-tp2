@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de recherche</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: black;
+        }
+
+        .recherche{
+        border: 1px solid #ccc;
+        display: inline-block;
+
+        }
+
+        .recherche__input{
+            background-color: transparent;
+            border: none;
+            display: inline-block;
+            vertical-align: top;
+            padding: 8px;
+            color: white;
+        }
+
+        .recherche__input:focus{
+            outline: none;
+        }
+
+        
+        .recherche__img{
+            display: inline-block;
+            vertical-align: top;
+            margin: 8px;
+        }
+    </style>
+</head>
+<body>
+    <form class="recherche">
+        <input class="recherche__input" type="text" placeholder="Rechercher">
+        <img class="recherche__img" src="https://s2.svgbox.net/hero-outline.svg?ic=search&color=fff" width="20" height="20">
+    </form>
+</body>
+</html>

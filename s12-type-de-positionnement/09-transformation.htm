@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propiété Filter</title>
+    <style>
+        img {
+            width: 500px;
+        }
+
+        section{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .mon-filtre {
+            filter: blur(0) 
+            brightness(1.14) 
+            contrast(1.18) 
+            hue-rotate(-198deg) 
+            invert(0.03) 
+            saturate(1.94) 
+            sepia(0.13);
+
+            transition: transform 1s cubic-bezier(0,1.11,1,-0.21) ,
+            filter 1s cubic-bezier(0,1.11,1,-0.21) 
+        }
+
+        .mon-filtre:hover {
+            filter: none;
+            transform: scale(0.8);
+
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <img class="mon-filtre" src="images/caufield.jpg" alt="">
+    </section>
+</body>
+
+</html>

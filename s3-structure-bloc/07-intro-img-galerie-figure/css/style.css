@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    /* l'image sera entièrement affiché dans le conteneur */
+    /* object-fit: contain; */
+    /* l'image couvre entièrement le conteneur, ce qui dépasse est coupé */
+    object-fit: cover; 
+
+}
+
+figure {
+    display: inline-block;
+    border: 2px solid blue;
+}
+
+figcaption {
+    padding: 5px;
+    text-align: center;
+}

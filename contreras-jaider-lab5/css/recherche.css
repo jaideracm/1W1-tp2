@@ -1,0 +1,32 @@
+.recherche {
+            border : 1px solid #cccccc00;
+            display : inline-block;
+            background-color: #00000021;
+            border-bottom: solid;
+          
+        }
+
+        .recherche__input {
+            background-color: transparent;
+            border : none;
+            display: inline-block;
+            vertical-align: top;
+            padding:8px;
+            color :#ffffff;
+            border-bottom: black 1px;
+
+        }
+        .recherche__input:focus {
+            outline : none;
+
+        }
+
+        .recherche__input::placeholder{
+            color : #ffffff;
+        }
+        
+        .recherche__img {
+            display: inline-block;
+            vertical-align: top;
+            margin:8px;
+        }

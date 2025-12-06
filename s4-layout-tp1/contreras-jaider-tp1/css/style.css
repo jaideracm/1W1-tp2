@@ -1,0 +1,155 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 100vh;
+}
+
+/**************************************** Les deux grandes sections blanc et noir*/
+.blanc{
+    background-color: #fff;
+    padding: 3vh 0;
+}
+
+.noir{
+    background-color: #000; 
+}
+
+/**************************************** structure générale de la mise en page*/
+header,main,footer{
+
+    width: 960px;
+    margin: 0 auto;
+}
+
+header{
+    height: 12vh;
+    width: 880px;
+}
+
+main{
+    height: 58vh;
+    padding: 3vh;
+    margin: 0 auto;
+}
+
+footer{
+    height: 24vh;
+    width: 880px;
+    color: #fff;
+}
+
+/* ****************************************************** ENTÊTE (header) ***************************************************************/
+
+.entete{
+    margin: 0 auto;
+}
+
+.entete__logo{
+    display: inline-block;
+
+}
+
+.entete__nav{
+    display: inline-block;
+    margin-left: 50px;
+}
+
+.entete__nav a{
+    display: inline-block;
+    padding: 5px 15px;
+    text-decoration: none;
+
+}
+
+/************************************************************* MAIN  ***************************/
+
+.hero{
+
+    box-shadow: 0 1px 18px rgba(10, 5, 5, 0.564);
+    width: 880px;
+    margin-left: 18px;
+
+}
+
+.main_photo{
+    display: block;
+    margin: 0 auto;
+    width: 880px;
+}
+
+.hero__figcaption{
+    color: white;
+    background-color: black;
+    padding: 4px;
+    margin: 0 auto;
+    width: 880px;
+}
+
+/************************************************************* PIED DE PAGE (footer) ***************************/ 
+.noir{
+    color: #fff;
+}
+
+.pied__section{
+    display: inline-block;
+    vertical-align: top;
+    width: 32%;
+    padding-top: 15px ;
+    font-size: 18px;
+
+}
+
+p{
+    font-size: 12px;
+}
+
+.logos{
+    display: flex;
+    padding-top: 20px;
+    gap: 15px;
+    
+        
+}
+
+.pied__cite{
+    display: block;
+    font-size: 12px;
+    margin-top: 16px;
+}
+
+/*************************************************************** BARRE DE RECHERCHE */
+.recherche{
+
+border: 1px solid #ccc;
+display: block;
+align-items: center;
+margin-top: 20px;
+margin-right: 60px;
+
+
+}
+
+.recherche__input{
+    background-color: transparent;
+    border: none;
+    display: inline-block;
+    vertical-align: top;
+    padding: 8px;
+    color: white;
+}
+
+.recherche__input:focus{
+outline: none;
+}
+
+            
+.recherche__img{
+display: inline-block;
+vertical-align: top;
+margin: 4px;
+}

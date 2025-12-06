@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propiété Filter</title>
+    <style>
+        img{
+            width: 500px;
+        }
+        .mon-filtre{
+            filter:contrast(2.14) hue-rotate(123deg);
+            transition: filter 1s;
+        }
+        
+        .mon-filtre:hover{
+            filter: none;
+        }
+    </style>
+</head>
+<body>
+    <img class="mon-filtre" src="images/caufield.jpg" alt="">
+</body>
+</html>

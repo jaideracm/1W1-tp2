@@ -1,0 +1,188 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.centre{
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.33);
+    padding: 10px;
+}
+
+.haut, .bas{
+    background-color: rgb(255, 233, 206);
+}
+
+.milieu{
+    background-color: rgb(179, 252, 252);
+}
+
+/* ***************************************************************************************************************** .ENTETE */
+.entete{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.entete__titre{
+    display: flex;
+    flex-direction: row;
+}
+
+.entete__logo{
+    width: 100px;
+    height: 100px;
+}
+
+.entete__h1{
+    font-size: 40px;
+    margin-left: 18px;
+    text-shadow: #00eaff 1px 0 10px;
+}
+
+.entete__nav{
+    font-size: 12px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    gap: 23px;
+    margin-right: 5px;
+}
+
+.entete__nav a{
+    text-decoration: none;
+    display: inline-block;
+    background-color: rgba(72, 208, 208, 0.745);
+    color: rgb(0, 0, 0);
+    padding: 3px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 4px;
+}
+
+.entete__sociaux{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    gap: 20px;
+    margin: 0;
+    margin-right: 6px;
+    
+}
+
+/* ************************************************************************************************************ .PRINCIPAL */
+.principal{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.principal__article{
+    font-size: 12px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 340px;
+    margin: 20px;
+    line-height: 150%;
+}
+
+.principal__article h2{
+    margin-bottom: 29px;
+    font-size: 25px;
+}
+
+figure img{
+    display: block;
+}
+
+figcaption{
+    background-color: rgba(0, 0, 0, 0.211);
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.principal__figure{
+    object-fit: fill;
+}
+
+
+.principal__figure img{
+    width: 100%;
+    height: 100%
+}
+
+h2{
+    color: rgb(0, 0, 130);
+}
+
+
+
+
+
+
+/* ************************************************************************************************************** .PIEDPAGE */
+
+.pied{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+.pied__section {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 141px;
+    font-size: 15px;
+    margin: 0;
+}
+
+.pied__cours{
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 299px;
+    font-size: 15px;
+    margin: 0;
+}
+
+.pied__resume{
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 268px;
+    font-size: 15px;
+    margin: 0;
+}
+
+.pied__section ul, .pied__cours ul {
+    list-style-type: none;
+    font-size: 1rem;
+    padding: 11px 0;
+}
+ 
+.pied__section li, .pied__cours li {
+    list-style-type: none;
+    font-size: 1rem;
+}
+
+.pied__sociaux{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    margin: 0;
+}

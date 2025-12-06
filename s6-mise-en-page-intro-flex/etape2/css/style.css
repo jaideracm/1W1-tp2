@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 14px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.centre{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+section{
+    font-size: 4rem;
+    background-color: rgba(255, 255, 255, 0.418);
+    
+}
+
+.couleur-1{
+    background-color: aquamarine;
+    color: black;
+}
+.couleur-2{
+    background-color: red;
+    color: black;
+}
+.couleur-3{
+    background-color: blue;
+    color: black;
+}
+.couleur-4{
+    background-color: rgb(0, 255, 60);
+    color: black;
+}
