@@ -1,6 +1,6 @@
 # TP 2 - Mise en Page Web
 ## HockeyStiques
-Description de ma page
+Page web sur les nouvelles du hockey sur glace et la LNH.
 
 - Auteur : Jaider Contreras
 - Cours : 1W1 Mise en Page Web
