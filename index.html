@@ -9,12 +9,15 @@
   <link rel="stylesheet" href="css/formulaire.css">
   <link rel="stylesheet" href="css/article.css">
   <link rel="stylesheet" href="css/style.css">
-
+  <link rel="stylesheet" href="css/galerie.css">
+  <link rel="stylesheet" href="css/video.css">
+  <link rel="stylesheet" href="css/recherche.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Momo+Trust+Display&family=Orbitron:wght@400..900&family=Roboto+Slab:wght@100..900&family=Stack+Sans+Notch:wght@200..700&display=swap"
     rel="stylesheet">
+  <link rel="shortcut icon" href="images/favicon-hockey.png" type="image/x-icon">
   <title>Jaider Contreras-TP2</title>
 </head>
 
@@ -24,8 +27,8 @@
       <img src="images/batons.webp" class="hero__logo" alt="logo" width="64" height="64">
       <div class="navigation">
         <label class="navigation__bouton" for="check-burger">
-          <img src="https://s2.svgbox.net/hero-solid.svg?ic=menu&color=000" class="burger__image" width="32"
-            height="32">
+          <img src="https://s2.svgbox.net/hero-solid.svg?ic=menu&color=000" class="burger__image" alt="icon du menu"
+            width="32" height="32">
         </label>
         <input type="checkbox" id="check-burger">
         <nav class="navigation__menu">
@@ -33,8 +36,9 @@
           <a href="#inscription">Inscription</a>
           <a href="#pointages">Pointages</a> <!--Tableau ici-->
           <a href="#articles">Articles</a>
+          <a href="#images">Galerie</a>
           <a href="#videos">Vidéos</a>
-          <a href="#images">Images</a>
+
           <a href="#liens">Autres liens</a>
         </nav>
       </div>
@@ -51,13 +55,17 @@
         <h2 class="accueil__items">Jaider Contreras 582-1W1 - Mise en page web</h2>
         <h2 class="accueil__items">Techniques d'integration multimédia</h2>
         <h2 class="accueil__items">Collège de Maisonneuve</h2>
-        <h2 class="accueil__items">Dépôt Github : <a href="https://github.com/jaideracm/1W1-tp2">Dépôt Github</a></h2>
+        <h2 class="accueil__items">Dépôt Github : <a href="https://github.com/jaideracm/1W1-tp2">jaideracm</a></h2>
         <h2 class="accueil__items">Automne 2025</h2>
 
         <h2 class="accueil">
           <a class="accueil__bouton" href="#inscription">Inscription</a>
         </h2>
-        <h2 class="accueil">Zone de recherche</h2>
+        <form class="recherche">
+          <input class="recherche__input" type="text" placeholder="Rechercher">
+          <img class="recherche__img" src="https://s2.svgbox.net/hero-outline.svg?ic=search&color=fff"
+            alt="barre de recherche" width="20" height="20">
+        </form>
       </div>
 
     </header>
@@ -82,12 +90,16 @@
             <label class="formulaire__label" for="txt-courriel">Courriel</label>
             <input class="formulaire__text" id="txt-courriel" type="email" placeholder="Entrez votre courriel">
           </fieldset>
+          <fieldset>
+            <label class="formulaire__label" for="txt-motdepasse">Mot de passe</label>
+            <input class="formulaire__text" id="txt-motdepasse" type="password" placeholder="Entrez un mot de passe">
+          </fieldset>
         </div>
-        <fieldset>
+        <fieldset class="boutons__divers">
           <legend>Abonnement</legend>
-          <label>Pro <input type="radio" name="rad-abonnement"></label>
-          <label>Intermédiare <input type="radio" name="rad-abonnement"></label>
-          <label>Débutant <input type="radio" name="rad-abonnement"></label>
+          <label>Quotidien<input type="radio" name="rad-abonnement"></label>
+          <label>Hebdomadaire<input type="radio" name="rad-abonnement"></label>
+          <label>Mensuel<input type="radio" name="rad-abonnement"></label>
           <input class="bouton__valider" type="submit" value="Valider">
         </fieldset>
         <h1 class="inscription__titre">Infolettre</h1>
@@ -103,7 +115,7 @@
 
   <div class="div__pointages">
     <section class="pointages centre" id="pointages">
-      <h1 class="pointages__titre">Pointages (premières 12 équipes)</h1>
+      <h1 class="pointages__titre">Classements (premières 12 équipes)</h1>
       <table>
         <thead>
           <tr>
@@ -112,161 +124,165 @@
             <th>Pointage</th>
             <th>Parties Jouées</th>
             <th>Victoires</th>
-            <th>Defeats</th>
-            <th>Defeats en Temps Extra</th>
+            <th>Défaites</th>
+            <th>Défaites en Temps Extra</th>
             <th>Pourcentage</th>
             <th>Buts</th>
           </tr>
         </thead>
+
         <tbody>
           <tr>
             <td>1</td>
             <td>Avalanches</td>
-            <td>37</td>
+            <td>51</td>
+            <td>31</td>
             <td>22</td>
-            <td>16</td>
-            <td>1</td>
-            <td>5</td>
-            <td>.841</td>
-            <td>88</td>
+            <td>2</td>
+            <td>7</td>
+            <td>.823</td>
+            <td>124</td>
           </tr>
           <tr>
             <td>2</td>
             <td>Stars</td>
+            <td>47</td>
             <td>32</td>
-            <td>23</td>
-            <td>14</td>
+            <td>21</td>
+            <td>6</td>
             <td>5</td>
-            <td>4</td>
-            <td>.696</td>
-            <td>80</td>
+            <td>.734</td>
+            <td>111</td>
           </tr>
           <tr>
             <td>3</td>
             <td>Hurricanes</td>
+            <td>40</td>
             <td>30</td>
-            <td>22</td>
-            <td>14</td>
-            <td>6</td>
+            <td>19</td>
+            <td>9</td>
             <td>2</td>
-            <td>.682</td>
-            <td>78</td>
+            <td>.667</td>
+            <td>101</td>
           </tr>
           <tr>
             <td>4</td>
+            <td>Capitals</td>
+            <td>40</td>
+            <td>31</td>
+            <td>18</td>
+            <td>9</td>
+            <td>4</td>
+            <td>.645</td>
+            <td>105</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Knights</td>
+            <td>39</td>
+            <td>30</td>
+            <td>15</td>
+            <td>6</td>
+            <td>9</td>
+            <td>.650</td>
+            <td>93</td>
+          </tr>
+          <tr>
+            <td>6</td>
             <td>Ducks</td>
-            <td>29</td>
-            <td>22</td>
-            <td>14</td>
-            <td>7</td>
-            <td>1</td>
-            <td>.659</td>
-            <td>80</td>
-          </tr>
-          <tr>
-            <td>5</td>
-            <td>Devils</td>
-            <td>29</td>
-            <td>22</td>
-            <td>14</td>
-            <td>7</td>
-            <td>1</td>
-            <td>.659</td>
-            <td>69</td>
-          </tr>
-          <tr>
-            <td>6</td>
-            <td>Lightings</td>
-            <td>28</td>
-            <td>22</td>
-            <td>13</td>
-            <td>7</td>
-            <td>2</td>
-            <td>.636</td>
-            <td>69</td>
-          </tr>
-          <tr>
-            <td>7</td>
-            <td>Krakens</td>
-            <td>28</td>
-            <td>22</td>
+            <td>39</td>
+            <td>31</td>
+            <td>19</td>
             <td>11</td>
+            <td>1</td>
+            <td>.629</td>
+            <td>113</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Wild</td>
+            <td>39</td>
+            <td>31</td>
+            <td>17</td>
+            <td>9</td>
             <td>5</td>
-            <td>6</td>
-            <td>.636</td>
-            <td>57</td>
+            <td>.629</td>
+            <td>90</td>
           </tr>
           <tr>
             <td>8</td>
             <td>Islanders</td>
-            <td>28</td>
-            <td>23</td>
-            <td>13</td>
-            <td>8</td>
-            <td>2</td>
+            <td>39</td>
+            <td>32</td>
+            <td>18</td>
+            <td>11</td>
+            <td>3</td>
             <td>.609</td>
-            <td>71</td>
+            <td>97</td>
           </tr>
           <tr>
             <td>9</td>
-            <td>Wilds</td>
-            <td>28</td>
-            <td>23</td>
-            <td>12</td>
-            <td>7</td>
-            <td>4</td>
-            <td>.609</td>
-            <td>68</td>
+            <td>Lightning</td>
+            <td>38</td>
+            <td>31</td>
+            <td>18</td>
+            <td>11</td>
+            <td>2</td>
+            <td>.613</td>
+            <td>102</td>
           </tr>
           <tr>
             <td>10</td>
-            <td>Kings</td>
-            <td>28</td>
-            <td>23</td>
-            <td>11</td>
-            <td>6</td>
-            <td>6</td>
-            <td>.609</td>
-            <td>62</td>
+            <td>Bruins</td>
+            <td>38</td>
+            <td>31</td>
+            <td>19</td>
+            <td>13</td>
+            <td>0</td>
+            <td>.594</td>
+            <td>107</td>
           </tr>
           <tr>
             <td>11</td>
-            <td>Knights</td>
-            <td>27</td>
-            <td>22</td>
-            <td>10</td>
-            <td>5</td>
-            <td>7</td>
-            <td>.614</td>
-            <td>69</td>
-          </tr>
-          <tr>
+            <td>Red Wings</td>
+            <td>37</td>
+            <td>32</td>
+            <td>17</td>
             <td>12</td>
-            <td>Mamooths</td>
-            <td>27</td>
-            <td>23</td>
-            <td>12</td>
-            <td>8</td>
             <td>3</td>
-            <td>.587</td>
-            <td>71</td>
+            <td>.578</td>
+            <td>100</td>
           </tr>
+          <tr>
+            <td>12</td>
+            <td>Flyers</td>
+            <td>36</td>
+            <td>29</td>
+            <td>16</td>
+            <td>9</td>
+            <td>4</td>
+            <td>.621</td>
+            <td>87</td>
+          </tr>
+
         </tbody>
       </table>
+      <p>Source : https://www.nhl.com/fr/standings/2025-12-12/league</p>
+        
     </section>
   </div>
 
   <!-- ********************************************************** Articles ***************************************** -->
   <div>
     <section class="centre" id="articles">
-      <h1>Nouvelles :</h1>
+      <h1 class="article__titre">Nouvelles :</h1>
       <article class="article">
         <div class="article__div">
           <h3>Les Capitols ont vaincu les Kings 3-1</h3>
-          <p>Les Capitols ont vaincu les Kings 3-1 à l'arène Crypto.com (maison des Kings à Los Angeles).
+          <p>Les Capitols ont vaincu les Kings 3-1 à l'aréna Crypto.com (maison des Kings à Los Angeles).
             Aliaksei Protas, Anthony Beauvillier et Tom Wilson ont marqué les trois buts de l'équipe de
             Washington. De l'autre côté, Adrian Kempe a marqué le but des Kings. Ovechkin a eu deux
-            assistances et il est devenu le septième joueur dans l'histoire de la LNH en avoir
+            assistances et il est devenu le septième joueur dans l'histoire de la LNH d'avoir
             800 points dans leur carriére sur la route (463 buts et 337 assistances).</p>
 
         </div>
@@ -286,7 +302,7 @@
             de 22 ans a déjà été ralenti par plusieurs blessures cette saison, notamment
             une blessure au bas du corps en novembre et une blessure au coude subie lors
             du camp d’entraînement. Foerster, qui avait inscrit plus tôt dans la rencontre
-            son 10e but (le meilleur total de l’équipe) compte 13 points en 21 matchs cette saison</p>
+            son 10e but (le meilleur total de l’équipe), il a inscrit 13 points en 21 matches cette saison</p>
 
         </div>
         <figure class="article__figure">
@@ -300,8 +316,8 @@
           <h3>Matheson a signé un contrat de 30M$ pour cinq ans avec les Canadiens</h3>
           <p>Le défenseur Mike Matheson a signé un contrat de cinq ans d’une valeur
             de 30 millions de dollars avec le Canadien de Montréal. Âgé de 31 ans,
-            il a choisi de rester à Montréal malgré la possibilité d’un plus gros
-            salaire ailleurs, affirmant vouloir gagner avec ce groupe et laisser au
+            il a choisi de rester à Montréal malgré la possibilité d’un salaire plus
+            élevé ailleurs, affirmant vouloir gagner avec ce groupe et laisser au
             club la flexibilité salariale pour bâtir une équipe compétitive. Matheson,
             qui pouvait devenir joueur autonome le 1er juillet, compte 15 points en 24
             matchs cette saison et se dit heureux de poursuivre son parcours à Montréal.</p>
@@ -316,7 +332,7 @@
         <div class="article__div">
           <h3>MacKinnon, Robertson et Bedard sont les trois joueurs étoiles du mois</h3>
           <p>Première étoile, Nathan MacKinnon (Avalanches): Mois dominant avec 26 points et une série
-            de performances offensives éclatantes, menant le Colorado à un mois parfait. Déuxième étoile,
+            de performances offensives éclatantes, menant le Colorado à un mois impeccable. Déuxième étoile,
             Jason Robertson (Stars): Meilleur buteur de novembre (13 buts), dont une séquence record de 7 matchs
             avec au moins un but, moteur des Stars. Troisième étoile, Connor Bedard (Blackhawks):
             23 points en 14 matchs pour la jeune vedette, impliqué sur plus de la moitié des buts de Chicago.</p>
@@ -330,17 +346,131 @@
 
     </section>
   </div>
-  <!-- ********************************************************** VIDEOS ***************************************** -->
+
+
+  <!-- *********************************************************** GALERIE D'IMAGES ***************************************  -->
   <div>
-    <section class="videos centre" id="videos">
-      <h1>Vidéos</h1>
+    <section class="galerie centre" id="images">
+      <h1 class="galerie__titre">Derniers gagnants de la Coupe Stanley</h1>
+      <figure class="galerie">
+        <figure class="galerie__figure">
+          <img src="images/stanleycup2025.jpg" alt="" class="galerie__img">
+          <figcaption class="galerie__figcaption">Panthers 2025</figcaption>
+        </figure>
+
+
+
+        <figure class="galerie__figure">
+          <img src="images/stanleycup2024.webp" alt="" class="galerie__img">
+          <figcaption class="galerie__figcaption">Panthers 2024</figcaption>
+        </figure>
+
+        <figure class="galerie__figure">
+          <img src="images/stanleycup2023.jpg" alt="" class="galerie__img">
+          <figcaption class="galerie__figcaption">Knights 2023</figcaption>
+        </figure>
+
+        <figure class="galerie__figure">
+          <img src="images/stanleycup2022.avif" alt="" class="galerie__img">
+          <figcaption class="galerie__figcaption">Avalanches 2022</figcaption>
+        </figure>
+
+        <figure class="galerie__figure">
+          <img src="images/stanleycup2021.jpg" alt="" class="galerie__img">
+          <figcaption class="galerie__figcaption">Lightnings 2021</figcaption>
+        </figure>
+
+        <figure class="galerie__figure">
+          <img src="images/stanleycup2020.jpg" alt="" class="galerie__img">
+          <figcaption class="galerie__figcaption">Lightnings 2020</figcaption>
+        </figure>
+
+        <figure class="galerie__figure">
+          <img src="images/stanleycup2019.jpg" alt="" class="galerie__img">
+          <figcaption class="galerie__figcaption">Blues 2019</figcaption>
+        </figure>
+
+        <figure class="galerie__figure">
+          <img src="images/stanleycup2018.jpg" alt="" class="galerie__img">
+          <figcaption class="galerie__figcaption">Capitols 2018</figcaption>
+        </figure>
+
+        <figure class="galerie__figure">
+          <img src="images/stanleycup2017.jpg" alt="" class="galerie__img">
+          <figcaption class="galerie__figcaption">Penguins 2017</figcaption>
+        </figure>
+
+        <figure class="galerie__figure">
+          <img src="images/stanleycup2016.jpg" alt="" class="galerie__img">
+          <figcaption class="galerie__figcaption">Penguins 2016</figcaption>
+        </figure>
+
+        <figure class="galerie__figure">
+          <img src="images/stanleycup2015.jpg" alt="" class="galerie__img">
+          <figcaption class="galerie__figcaption">Blackhawks 2015</figcaption>
+        </figure>
+
+        <figure class="galerie__figure">
+          <img src="images/stanleycup2014.webp" alt="" class="galerie__img">
+          <figcaption class="galerie__figcaption">Kings 2014</figcaption>
+        </figure>
+      </figure>
     </section>
   </div>
 
-  <!-- *********************************************************** IMAGES ***************************************  -->
+
+  <!-- ********************************************************** VIDEOS ***************************************** -->
   <div>
-    <section class="images centre" id="images">
-      <h1>Images</h1>
+    <section class="centre" id="videos">
+      <h1 class="videos__titre">Meilleures moments de l'année</h1>
+      <figure class="video">
+        <iframe width="360" height="200" src="https://www.youtube.com/embed/vvJPLEmmPdo?si=0FTsRFuA5GGAWPQG"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+      </figure>
+
+      <figure class="video">
+        <iframe width="360" height="200" src="https://www.youtube.com/embed/p0YFbphDW6M?si=X4cbPtNXgvY-sr2d"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+      </figure>
+
+      <figure class="video">
+        <iframe width="360" height="200" src="https://www.youtube.com/embed/aC5-GE6vbYI?si=SFFvuAKXlc6yzo5I"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+      </figure>
+
+      <figure class="video">
+        <iframe width="360" height="200" src="https://www.youtube.com/embed/iGPdb7uOfow?si=wGEtntkuUHQ9Ar1l"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+      </figure>
+
+      <figure class="video">
+        <iframe width="360" height="200" src="https://www.youtube.com/embed/VJDUuS4G4OI?si=qCtIvNx0QAz7Hcy-"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+      </figure>
+
+      <figure class="video">
+        <iframe width="360" height="200" src="https://www.youtube.com/embed/yOiwEEFn3Ro?si=L8CR1taC85xEEPJP"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+      </figure>
+
     </section>
   </div>
 
@@ -392,16 +522,26 @@
       </section>
       <div class="pied__logos">
         <figure class="pied__logos">
-          <img src="https://s2.svgbox.net/octicons.svg?ic=mark-github-bold&color=000" width="20" height="20"
-            alt="github">
-          <img src="https://s2.svgbox.net/materialui.svg?ic=facebook&color=000" width="32" height="32">
-          <img src="https://s2.svgbox.net/materialui.svg?ic=sports_hockey&color=000" width="32" height="32">
-          <img src="https://s2.svgbox.net/social.svg?ic=linkedin&color=000" width="32" height="32">
-          <img src="https://s2.svgbox.net/social.svg?ic=instagram&color=000" width="32" height="32">
-          <img src="https://s2.svgbox.net/social.svg?ic=discord&color=000" width="32" height="32">
+
+          <a href="https://www.nhl.com/" target="blank"><img
+              src="https://s2.svgbox.net/materialui.svg?ic=sports_hockey&color=000" width="32" height="32"
+              alt="icon lnh"></a>
+          <a href="https://github.com/jaideracm/1W1-tp2" target="blank"><img
+              src="https://s2.svgbox.net/social.svg?ic=github&color=000" width="32" height="32" alt="github icon"></a>
+          <a href="https://www.facebook.com/NHL/?locale=es_LA" target="blank"><img
+              src="https://s2.svgbox.net/materialui.svg?ic=facebook&color=000" width="32" height="32"
+              alt="facebook icon"></a>
+          <a href="https://www.linkedin.com/" target="blank"><img
+              src="https://s2.svgbox.net/social.svg?ic=linkedin&color=000" width="32" height="32"
+              alt="linkedin icon"></a>
+          <a href="https://www.instagram.com/nhl/" target="blank"><img
+              src="https://s2.svgbox.net/social.svg?ic=instagram&color=000" width="32" height="32"
+              alt="instagram icon"></a>
+          <a href="https://discord.com/" target="_blank"><img
+              src="https://s2.svgbox.net/social.svg?ic=discord&color=000" width="32" height="32" alt="discord icon"></a>
         </figure>
       </div>
-
+      <cite class="pied__cite">Avis de confidentialité | Privacy notice</cite>
     </footer>
   </div>
 </body>

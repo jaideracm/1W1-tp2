@@ -6,6 +6,12 @@
     
 }
 
+.article__titre{
+    text-shadow: 1px 1px 2px red,
+        0 0 1em blue,
+        0 0 0.2em blue;
+    color: white;
+}
 /* Elements du conteneur dans la première colonne */
 .article__div{
     flex-grow: 1;

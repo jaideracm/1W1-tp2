@@ -16,7 +16,7 @@ body{
 
 .formulaire fieldset{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     gap: 25px;
     border: 3px solid #0000004a;
     margin: 10px 0 auto;
@@ -29,7 +29,22 @@ body{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    
+}
+
+.formulaire__label{
+    text-shadow: 1px 1px 2px red,
+        0 0 1em blue,
+        0 0 0.2em blue;
+}
+
+.boutons__divers{
+    text-shadow: 1px 1px 2px red,
+        0 0 1em blue,
+        0 0 0.2em blue;
+}
+
+.boutons__divers label{
+    font-size: 14px;
 }
 
 input{

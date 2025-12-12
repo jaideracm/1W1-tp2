@@ -1,0 +1,45 @@
+.galerie{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.galerie__titre{
+    color: white;
+    text-shadow: 1px 1px 2px red,
+        0 0 1em blue,
+        0 0 0.2em blue;
+}
+
+.galerie__figure{
+    flex-grow: 0; /* flex grow 1 fait depasser le flex-basis */
+    flex-shrink: 0;
+    flex-basis: 230px;
+    transform: rotate(-10deg); 
+
+    filter: blur(0.7px)
+            brightness(0.78) 
+            contrast(1.06) 
+            grayscale(0.3); 
+
+    transition: filter 1s, transform 1s cubic-bezier(.02,.65,.66,.96) ;
+}
+
+.galerie__img{
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 5px;
+
+}
+.galerie__figcaption{}
+
+.galerie__figure:nth-of-type(odd){
+    transform: rotate(10deg);
+}
+
+.galerie__figure:hover{
+    filter: none;
+    transform: scale(2) rotate(0deg);
+}

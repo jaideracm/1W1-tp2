@@ -24,19 +24,12 @@ h3 {
 
 .centre {
     max-width: 1100px;
-    background-color: #ffffff4c;
+    background-color: #ffffff81;
     margin: 0 auto;
     padding: 30px;
 }
 
 /* **********************************************la division .hero    */
-
-.hero {
-    background-image: url("../images/caufield.jpg");
-    background-position: 50%;
-    background-repeat: no-repeat;
-
-}
 
 .hero__barresup {
     background-color: #f6f9ffcc;
@@ -51,75 +44,109 @@ h3 {
     background-color: #f6f9ffcc;
 }
 
-.hero__logo {}
+body>div:nth-of-type(1) {
+    background: linear-gradient(to top, transparent 40%, white)
+    linear-gradient(to bottom, transparent 80%, white),
+        url(../images/caufield.jpg);
+    background-repeat: no-repeat;
+    background-position: 50%;
 
+}
 body>div:nth-of-type(2) {
-    background: linear-gradient(to bottom, transparent 80%, black 100%),
+    background: linear-gradient(to top, transparent 80%, white),
+    linear-gradient(to bottom, transparent 80%, black 100%),
         url(../images/mc-david.jpg)
 }
 
 body>div:nth-of-type(3) {
-    background: linear-gradient(to bottom, transparent 80%, black 100%),
+    background: linear-gradient(to top, transparent 80%, rgb(0, 0, 0)),
+    linear-gradient(to bottom, transparent 80%, black 100%),
         url(../images/stade.jpg);
  }
 
 body>div:nth-of-type(4) {
     background: linear-gradient(to top, transparent 80%, black 100%),
+     linear-gradient(to bottom, transparent 80%, white 100%),
         url(../images/article1.jpg);
-    background-repeat: no-repeat;
+    background-repeat: cover;
 }
 
 body>div:nth-of-type(5) {
-    background-color: rgb(0, 255, 89);
+    background: linear-gradient(to top, transparent 80%, white 100%),
+    linear-gradient(to bottom, transparent 80%, rgb(0, 0, 0) 100%),
+        url(../images/avalanches.webp);
+    background-repeat: cover;
 }
 
 body>div:nth-of-type(6) {
-    background-color: rgb(0, 204, 255);
+    background: linear-gradient(to top, transparent 80%, black 100%),
+    linear-gradient(to bottom, transparent 80%, white 100%),
+        url(../images/bruins2.webp);
+    background-repeat: cover;
 }
 
 body>div:nth-of-type(7) {
-    background-color: rgb(187, 0, 255);
+    background: linear-gradient(to top, transparent 80%, rgb(255, 255, 255) 100%),
+        url(../images/equipe.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 body>div:nth-of-type(8) {
     background-color: rgb(255, 0, 13);
 } 
 
+/* img{
+    display: block;
+    width: 100%;
+    margin: 0;
+
+} */
+
+/* figure{
+    margin: 0;
+    padding: 0;
+} */
 /* ************************************************************** Accueil - Hero Page ************************* */
 .accueil__div {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 70px;
     
 }
 
 .info__accueil{
-    background-color: #00048634;
-    padding: 4px;
-    font-size: 22px;
-    border-radius: 2px;
-    font-family: "Share Tech Mono", monospace;
+    background-color: #0004869e;
+    padding: 35px 20px;
+    font-size: 26px;
+    border-radius: 6px;
+    font-family: "Oswald", sans-serif;
+    color: white;
 }
 
 .accueil__items{
     font-size: 14px;
     border-radius: 4px;
-    padding: 5px;
-    background-color: #0004862e;
-    flex-basis: 485px;
+    padding: 5px 13px;
+    background-color: #000486bb;
+    color: rgba(255, 255, 255, 0.793);
+    flex-basis: 200px;
     flex-shrink: 0;
     flex-flow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accueil__items a{
+    color: rgb(255 122 122);
 }
 
 .hero{
      background: linear-gradient(to top, transparent 80%, rgb(255, 255, 255) 100%),
      url("../images/caufield.jpg");
      background-position: 50%;
-}
-
-.accueil {
-    color: rgb(0, 0, 0);
-   
 }
 
 .accueil__bouton {
@@ -145,8 +172,6 @@ body>div:nth-of-type(8) {
 }
 
 /* ************************************************* INSCRIPTION ******************************** */
-.div__inscription {
-}
 
 .inscription{
     display: flex;
@@ -158,7 +183,16 @@ body>div:nth-of-type(8) {
 .inscription__titre {
     margin: 10px;
     color: azure;
-    text-shadow: #2600ff 1px 0 10px;
+    text-shadow: 1px 1px 2px red,
+        0 0 1em blue,
+        0 0 0.2em blue;
+}
+
+.boutons__divers legend{
+    font-family:"Oswald", sans-serif;
+    font-size: 25px;
+    text-shadow:1px 1px 2px blue, 0 0 1em red, 0 0 0.2em red;
+    color: white;
 }
 
 /* ************************************************* TABLEAU ************************************ */
@@ -173,9 +207,6 @@ body>div:nth-of-type(8) {
     padding-bottom: 10px;
 }
 
-.div__pointages {
-}
-
 table {
     font-family: "Iceland", sans-serif;
     border-collapse: collapse;
@@ -183,7 +214,10 @@ table {
     border: 3px solid black;
 }
 
-tr {}
+tr:hover{
+    background-color: rgba(36, 36, 156, 0.526);
+    
+}
 
 td,
 th {
@@ -195,9 +229,15 @@ th {
     font-family: "Iceland", sans-serif;
 }
 
+td:hover, th:hover{
+    background-color: rgba(154, 154, 201, 0.775);
+    color: #fff;
+}
+
 th {
     font-style: italic;
     font-weight: bold;
+    background-color: #5c8bdcd7;
 }
 
 caption {
@@ -206,15 +246,13 @@ caption {
     border: 1px dotted rgb(255, 255, 255);
 }
 
-tbody tr:nth-of-type(odd) {
-    background-color: rgb(255, 255, 255);
-}
-
 /* ********************************* ARTICLES ******************************** */
 
 .centre{
     background-color: #ffffff98;
 }
+
+
 
 /* ********************************* PIED DE PAGE **************************** */
 footer{
@@ -278,7 +316,6 @@ ul {
 .pied__cite {
     display: block;
     font-size: 1rem;
-    padding-top: 20px;
 }
  
 .pied__logos {
