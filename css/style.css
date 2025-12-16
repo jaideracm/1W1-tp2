@@ -78,14 +78,14 @@ body>div:nth-of-type(5) {
     background-repeat: cover;
 }
 
-body>div:nth-of-type(6) {
+body>div:nth-of-type(7) {
     background: linear-gradient(to top, transparent 80%, black 100%),
     linear-gradient(to bottom, transparent 80%, white 100%),
         url(../images/bruins2.webp);
     background-repeat: cover;
 }
 
-body>div:nth-of-type(7) {
+body>div:nth-of-type(8) {
     background: linear-gradient(to top, transparent 80%, rgb(255, 255, 255) 100%),
         url(../images/equipe.jpg);
     background-repeat: no-repeat;
